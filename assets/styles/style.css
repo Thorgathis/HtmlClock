@@ -1,0 +1,45 @@
+.bg-light {
+    background: url("../icons/1.png") no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+.bg-dark {
+    background: url("../icons/2.png") no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+#clock {
+    font-family: sans-serif;
+    font-size: 196px;
+    font-weight: bold;
+    color: rgb(214, 214, 214);
+    float: left;
+}
+.box {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.Button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(48, 172, 93);
+    border-radius: 27px;
+    border: 1px solid rgb(48, 172, 93);
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 14px 13px;
+    text-decoration: none;
+}
