@@ -14,22 +14,46 @@ setInterval(function () {
     document.getElementById("clock").innerHTML = format;
 }, 100);
 
+var theme;
 function setTheme(themeName) {
-    localStorage.setItem("theme", themeName);
+    theme = themeName;
     document.documentElement.className = themeName;
 }
 
 function toggleTheme() {
-    if (localStorage.getItem("theme") === "bg-dark") {
+    if (theme === "bg-dark") {
         setTheme("bg-light");
     } else {
         setTheme("bg-dark");
     }
 }
 (function () {
-    if (localStorage.getItem("theme") === "bg-dark") {
+    if (theme === "bg-dark") {
         setTheme("bg-dark");
     } else {
         setTheme("bg-light");
+    }
+})();
+
+var state;
+function setState(StateName, OtherState) {
+    state = StateName;
+    var element = document.getElementById("box");
+    element.classList.add(StateName);
+    element.classList.remove(OtherState);
+}
+
+function toggleState() {
+    if (state === "state-2") {
+        setState("state-1", "state-2");
+    } else {
+        setState("state-2", "state-1");
+    }
+}
+(function () {
+    if (state === "state-1") {
+        setTheme("state-2", "state-1");
+    } else {
+        setTheme("state-1", "state-2");
     }
 })();
