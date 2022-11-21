@@ -12,10 +12,15 @@
 }
 #clock {
     font-family: sans-serif;
-    font-size: 196px;
+    font-size: 10vw;
     font-weight: bold;
     color: rgb(214, 214, 214);
     float: left;
+}
+@media screen and (max-width: 1250px) {
+    #clock {
+        font-size: 20vw;
+    }
 }
 .box {
     margin: 0;
