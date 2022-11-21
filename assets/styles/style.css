@@ -1,16 +1,14 @@
 .bg-light {
-    background: url("../icons/1.png") no-repeat;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    background: url("../icons/1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .bg-dark {
-    background: url("../icons/2.png") no-repeat;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    background: url("../icons/2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #clock {
     font-family: sans-serif;
@@ -22,13 +20,13 @@
 .box {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 16%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
-.Button {
+.button {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -38,7 +36,7 @@
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
+    font-family: "Segoe UI";
     font-size: 17px;
     padding: 14px 13px;
     text-decoration: none;
